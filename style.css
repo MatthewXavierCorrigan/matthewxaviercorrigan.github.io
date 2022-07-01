@@ -1,0 +1,28 @@
+@import url('/fonts/fonts.css');
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+.title, .subtitle, .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+    font-family: "Karrik";
+}
+
+.fancy {
+    font-family: "Louise";
+}
+
+@media screen and (min-width: 750px){
+    .content table td:nth-of-type(1),.content table td:nth-of-type(2) {
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .content table td:nth-of-type(4), .content table th:nth-of-type(4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #originalMusic td:nth-of-type(3), .content table th:nth-of-type(3) {
+        display: none;
+    }
+}
